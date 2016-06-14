@@ -12,6 +12,15 @@ var tests = {};
             return;
         }
 
+        if (path.extname(filename) === '.json') {
+            var json = require(fullpath);
+            for (var key in json) {
+                name = path.relative(__dirname + '/../../..', fullpath) + ' ' + key;
+                tests[name] = json[key];
+            }
+            return;
+        }
+
         var name = filename.replace(/(\.min)?\.css$/, '');
         var key = /\.min\.css/.test(filename) ? 'compressed' : 'source';
 

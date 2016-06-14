@@ -1,0 +1,18 @@
+{
+    "string with escaped \\n": {
+        "source": ".a{content:\"te\\\nst\"}",
+        "compressed": ".a{content:\"test\"}"
+    },
+    "string with escaped \\r": {
+        "source": ".a{content:\"te\\\rst\"}",
+        "compressed": ".a{content:\"test\"}"
+    },
+    "string with escaped \\r\\n": {
+        "source": ".a{content:\"te\\\r\nst\"}",
+        "compressed": ".a{content:\"test\"}"
+    },
+    "string with escaped \\f": {
+        "source": ".a{content:\"te\\\fst\"}",
+        "compressed": ".a{content:\"test\"}"
+    }
+}
