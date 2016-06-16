@@ -133,6 +133,7 @@
         }
     },
     "functionExpression.7": {
+        "skip": true,
         "source": "expression(\n// )\n)",
         "translate": "expression(\n// )\n)",
         "ast": {

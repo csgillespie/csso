@@ -1,5 +1,6 @@
 {
     "unknown.0": {
+        "skip": true,
         "source": "//",
         "ast": {
             "type": "Unknown",
@@ -7,6 +8,7 @@
         }
     },
     "unknown.1": {
+        "skip": true,
         "source": "// invalid css",
         "ast": {
             "type": "Unknown",

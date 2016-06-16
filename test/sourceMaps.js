@@ -68,7 +68,7 @@ function extractSourceMap(source) {
 }
 
 function createTranslateWidthSourceMapTest(name, test, context) {
-    it(name, function() {
+    (test.skip ? it.skip : it)(name, function() {
         var ast = csso.parse(test.source, {
             context: context,
             positions: true
