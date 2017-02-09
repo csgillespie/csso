@@ -240,7 +240,7 @@ console.log(result.css);
 
 #### minifyBlock(source[, options])
 
-The same as `minify()` but for style block. Usualy it's a `style` attribute content.
+The same as `minify()` but for style block. Usually it's a `style` attribute content.
 
 ```js
 var result = csso.minifyBlock('color: rgba(255, 0, 0, 1); color: #ff0000').css;
